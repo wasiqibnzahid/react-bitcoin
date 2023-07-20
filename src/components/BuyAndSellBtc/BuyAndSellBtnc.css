@@ -1,0 +1,39 @@
+.buyandsellsection {
+  margin-top: 25px;
+}
+.buyandSellWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  background-color: var(--white);
+  width: 44%;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  padding: 24px 0;
+}
+.card .name {
+  display: inline-block;
+  margin-top: 15px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#17C8FC, #1D72F1);
+}
+.pinkbg{
+    background: linear-gradient(#FF677C, #FB23A2);
+}
+

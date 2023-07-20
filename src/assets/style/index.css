@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f3f6f9;
+}
+#root {
+  height: 100%;
+  max-width: 720px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold";
+  src: url("../font-family/FontsFree-Net-SFProDisplay-Semibold.ttf");
+}
+:root {
+  --black: #4c5968;
+  --white: #ffffff;
+  --gray: #aeb8c4;
+  --pink: #ee225d;
+  --green: #1ec070;
+}
+.text-gray {
+  color: var(--gray);
+}
+.relative {
+  position: relative;
+}
+body {
+  font-family: "SF Pro Display Semibold";
+  font-size: 16px;
+  color: #4c5968;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:not(.link-styles) {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+input:hover,
+input:focus {
+  outline: none;
+}
+h1 {
+  color: var(--black);
+  font-size: 1.8rem;
+}
+h2 {
+  padding: 1rem 0;
+}
+.text-center {
+  text-align: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.mainBody {
+  background-color: #f3f6f9;
+  padding: 30px 15px 100px 15px;
+  margin-bottom: 15px;
+}
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .mainBody {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hide.show {
+  opacity: 1;
+}
+
+.loader-parent {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.loader {
+  border: 2px solid #ffac2d;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  border-top-color: transparent;
+  animation: rotate 600ms infinite linear;
+}
+.loader.loader-small {
+  width: 1rem;
+  height: 1rem;
+
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

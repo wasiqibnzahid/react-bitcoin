@@ -1,0 +1,70 @@
+.bitCoinWallet {
+  padding: 20px 18px 20px 18px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  height: 206px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.bitcoinCircle {
+  height: 46px;
+  width: 46px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+.totalAmount {
+  font-size: 2rem;
+}
+.bitCoinWallet .flexBox:first-of-type {
+  margin-bottom: 15px;
+}
+.mb2 {
+  margin-bottom: 10px;
+}
+.totalAmount {
+  margin-bottom: 10px;
+}
+.percentageRectangle {
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: var(--pink);
+  color: var(--white);
+}
+.downArrow {
+  text-align: center;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}
+
+.showBtnDropDown {
+  transition: 0.3s;
+}
+
+.accordionContent {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.btnWidth {
+  min-width: 90px;
+  min-height: 34px;
+}
+
+.h-280 {
+  height: 280px;
+  transition: all 0.3s;
+}

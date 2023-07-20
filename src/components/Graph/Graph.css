@@ -1,0 +1,104 @@
+.graphSection {
+  margin: 1.25rem 0;
+}
+
+.graphNavigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.graphNavigation li {
+  cursor: pointer;
+  color: var(--gray);
+  padding: 0.375rem 0.75rem;
+  border-radius: 1.875rem;
+  transition-duration: 300ms;
+}
+
+.graphNavigation li.active {
+  background-color: #aeb8c4;
+  color: var(--white);
+}
+
+.graphNavigation li:hover {
+  background-color: #c0c4c9;
+  color: var(--white);
+}
+
+.graphWrapper {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 0.25rem 1rem,
+    rgba(17, 17, 26, 0.05) 0px 0.5rem 2rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+
+.lowandhigh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875rem 0.9375rem 2.25rem 0.9375rem;
+  color: var(--gray);
+}
+
+.point {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: var(--pink);
+  border-radius: 50%;
+}
+
+.green::before {
+  background-color: green;
+}
+.areaGraphWrapper {
+  position: relative;
+}
+.btcToDollar {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+.btcToDollar::before {
+  content: "";
+  background: linear-gradient(#ff8f17, #ffc843);
+  box-shadow: 0 0 0 3px #ff8f1754;
+}
+
+@media (min-width: 25rem) {
+  .graphNavigation li {
+    padding: 0.375rem 1.5rem;
+  }
+  .lowandhigh {
+    padding: 1.875rem 1.5rem 1.25rem 1.5rem;
+  }
+  .point::before {
+    height: 0.625rem;
+    width: 0.625rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .graphSection {
+    margin: 1.5625rem 0;
+  }
+  .graphNavigation {
+    margin-bottom: 1.5625rem;
+  }
+}

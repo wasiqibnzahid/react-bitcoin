@@ -1,0 +1,21 @@
+/* .headerSection{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
+.navMenu{
+    padding: 15px;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+@media(min-width:768px){
+    .headerSection{
+        max-width: 720px;
+        margin: auto;  
+    }
+}
